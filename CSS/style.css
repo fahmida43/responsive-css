@@ -1,0 +1,279 @@
+/*
+
+Theme Name : My Folio
+Author     : My Folio
+Version    : 1.0.0
+
+
+Table Of Content
+===================================
+   1. Common Css
+   2. Nav Section
+   3. Banner Section
+*/
+
+/* Common Css start */
+h1,h2,h3,h4.h5,h6,
+p,
+ul,ol,
+small,
+span{
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    list-style-type: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+body{
+ 
+    font-family: 'Open Sans', sans-serif;
+ }
+
+
+/* Common Css end */
+
+/* nav section css start */
+nav{
+    background: #02918C;
+}
+#main_menu ul li a{
+    color: #fff;
+    transition: 1s;
+}
+#main_menu ul li a:hover{
+    color: #CFC91D;
+}
+
+
+/* nav section css end */
+
+
+/* banner setion css start */
+
+
+#banner .banner_slider_item{
+    height: 728px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+}
+#banner .bannerContent h1,h4,p{
+    color: #fff;
+}
+#banner .banner_content h4{
+    font-size: 30px;
+    font-weight: 800;
+ }
+ 
+#banner .bannerContent p{
+    font-weight: 400;
+    font-size: 18px;
+}
+#banner .bannerContent h1{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 60px;
+    font-weight: 800;
+}
+#banner .banner_content img{
+    display: block;
+    margin: 52px auto;
+ }
+#banner .bannerContent a{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 15px 40px;
+    transition: .25s;
+    margin-top: 30px;
+    
+    
+}
+#banner .bannerContent a:hover{
+    color: #fff;
+}
+#banner .banner_slider_item::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/*banner section css end */
+
+/* about sec css start */
+#about p{
+    color: #000;
+}
+#about h2{
+    font-weight: 800;
+    color: #02918C;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+#about .about_item{
+    color:#7e8287;
+    border-right: 1px solid #d9dbdb;
+    padding: 37px 65px;
+ }
+ #about .about_item:last-child{
+    border-right-color: transparent;
+ }
+ #about .about_item h4{
+    font-size: 14px;
+    color: #7e8287;
+    font-weight: 800;
+}
+ #about .about_item p{
+    font-size: 11px;
+    line-height: 20px;
+    color: #7e8287;
+ }
+ #about .about_item i{
+     color: #02918C;
+     font-size: 20px;
+     padding-bottom: 15px;
+     ;
+ }
+ #about .about_item_container{
+     margin-bottom: 50px;
+     margin-top: 50px;
+ }
+/* about sec css end */
+/* service section start */
+#service p{
+   color: #7e8287;
+   padding-top: 20px;
+}
+#service i{
+    color: #02918C;
+    font-size: 25px;
+    padding: 18px;
+}
+#service{
+    padding: 65px 0;
+    background-image: url(../images/my-work-bg.png);
+    background-size: cover;
+    background-position: center;
+    color: #7e8287;
+ }
+ #service h2{
+    font-weight: 800;
+    color: #02918C;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+#service h4{
+    color: #7e8287;
+    font-weight: 800;
+    font-size: 14px;
+}
+/* service section end */
+/* My Work Section Css Start */
+#myWork .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#myWork h2{
+    font-weight: 800;
+    color: #02918C;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+#myWork p{
+    color: #7e8287;
+    padding-top:15px;
+}
+#myWork .myWork_item{
+    position: relative;
+ }
+ #myWork .myWork_item .overlay{
+    position: absolute;
+    color: #fff;
+    background-color:rgba(2,145,140,0.85);
+    inset: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s linear;
+ }
+ #myWork .myWork_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+ }
+ #myWork .myWork_item .overlay h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+ }
+ #myWork .myWork_item .overlay p{
+    font-size: 11px;
+ }
+ /* //My Work Section Css End */
+ 
+ 
+ /* Contact Section Css Start */
+ #contact .container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#contact h2{
+    font-weight: 800;
+    color: #02918C;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+ #contact p{
+    color: #7e8287;
+    padding-top: 15px;
+}
+ #contact .contact_form{
+    background-color: #0b0b0b;
+    padding: 50px 0;
+ }
+ #contact .contact_form input,
+ #contact .contact_form textarea{
+    display: block;
+    background: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #898989;
+    color:#797c81;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+    font-size: 16px;
+ }
+#contact button{
+    margin-top: 36px;
+}
+#contact button:hover{
+    color: white;
+    border: transparent;
+
+    
+}
+
+ /* //Contact Section Css End */
+
+
